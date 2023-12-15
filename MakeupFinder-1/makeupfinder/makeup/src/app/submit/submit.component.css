@@ -1,0 +1,27 @@
+button{
+    background-color: black;
+    border-color: 5px black;
+    color: pink;
+    padding: 15px 32 px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 7px;
+}
+
+header{
+    background: pink;
+    padding:0;
+    font-family:fantasy;
+    font-weight: 300;
+}
+
+body{
+    min-height: 100vh;
+}
+
+h1{
+    text-align: center;
+    font-family: fantasy;
+    font-weight: 150;
+    
+}

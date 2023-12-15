@@ -1,0 +1,48 @@
+<router-outlet></router-outlet>
+<router-outlet></router-outlet>
+ <body style="background-color:pink;">
+<div id="wrapper">  
+<header>
+
+<div>
+<p  *ngIf="!this.hasAccount()" style="font-family: 'Times New Roman';"> What are your lash concerns?
+        &nbsp;&nbsp;&nbsp;&nbsp;   
+        <button class= "eyelash" style= "background-color: deeppink" (click)= "lash('Short lashes')">Short lashes</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button class= "eyelash" style= "background-color: deeppink"(click)= "lash('Straight lashes')">Straight lashes</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button class= "eyelash" style= "background-color: deeppink" (click)= "lash('Sparse lashes')">Sparse Lashes</button>
+        &nbsp;&nbsp;&nbsp;&nbsp; 
+        {{this.eyelash}} 
+
+</p>
+
+</div>
+
+<button class="getMascara"  (click) = "getMascara()" > Get Your Perfect Mascara!</button>
+ 
+
+
+<div>
+    &nbsp;&nbsp;&nbsp;&nbsp;   
+    &nbsp;&nbsp;&nbsp;&nbsp;   
+
+
+
+        <img width ="500px" height="500" src= "{{this.imageUrl}}" >
+    
+        
+        <div class = "content">
+    
+            <li>
+            <p> Mascara: {{this.mascaraName}}</p> 
+            <p> Shade: {{this.mascaraColor}}</p>
+             <p> Price: {{this.mascaraPrice}} <p> 
+
+</li>
+
+</div>
+
+
+            </div>
+

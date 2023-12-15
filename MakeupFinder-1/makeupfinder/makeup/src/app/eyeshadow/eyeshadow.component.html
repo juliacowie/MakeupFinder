@@ -1,0 +1,56 @@
+<router-outlet></router-outlet>
+<router-outlet></router-outlet>
+ <body style="background-color:pink;">
+<div id="wrapper">  
+<header>
+
+<p *ngIf="!this.hasAccount()"  style="font-family: Times New Roman;"> What is your eye color?
+        &nbsp;&nbsp;&nbsp;&nbsp;   
+        <button class= "eyeColor" style= "background-color: lightSkyBlue" (click)= "eyeColor('Blue')">Blue</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button class= "eyeColor" style= "background-color: saddlebrown"(click)= "eyeColor('Brown')">Brown</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button class= "eyeColor" style= "background-color: green" (click)= "eyeColor('Green')">Green</button>
+        &nbsp;&nbsp;&nbsp;&nbsp; 
+        <button class= "eyeColor" style= "background-color: darkkhaki" (click)= "eyeColor('Hazel')">Hazel</button>
+        &nbsp;&nbsp;&nbsp;&nbsp; 
+
+        {{this.eye}} </p>
+
+        
+    
+
+
+<button class="geteyeShadow"  (click) = "geteyeShadow()" > Get Your Perfect Eyeshadow!</button>
+ 
+
+
+<div>
+    &nbsp;&nbsp;&nbsp;&nbsp;   
+    &nbsp;&nbsp;&nbsp;&nbsp;   
+
+
+
+        <img width ="500px" height="500" src= "{{this.imageUrl}}" >
+    
+        
+        <div class = "content">
+    
+            <li>
+            <p> Eyeshadow: {{this.eyeshadowName}}</p> 
+            <p> Shade: {{this.eyeshadowColor}}</p>
+             <p> Price: {{this.eyeshadowPrice}} <p> 
+
+</li>
+
+</div>
+
+
+           
+    
+
+     
+        </div>
+
+       
+

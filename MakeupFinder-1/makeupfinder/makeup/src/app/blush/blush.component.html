@@ -1,0 +1,50 @@
+<router-outlet></router-outlet>
+<router-outlet></router-outlet>
+ <body style="background-color:pink;">
+<div id="wrapper">  
+<header>
+
+<div>
+<p  *ngIf="!this.hasAccount()"   style="font-family: Times New Roman" > What is your skin color?
+    &nbsp;&nbsp;&nbsp;&nbsp;   
+    <button class= "skinColor" style= "background-color: navajowhite" (click)= "skinColor('Fair')">Fair</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <button class= "skinColor" style= "background-color: peru"(click)= "skinColor('Medium')">Medium</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <button class= "skinColor" style= "background-color: sienna" (click)= "skinColor('Dark')">Dark</button>
+    &nbsp;&nbsp;&nbsp;&nbsp; 
+    {{this.skin}} 
+   
+</p>
+
+</div>
+
+<button class="getBlush"  (click) = "getBlush()" > Get Your Perfect Blush!</button>
+ 
+
+
+<div>
+    &nbsp;&nbsp;&nbsp;&nbsp;   
+    &nbsp;&nbsp;&nbsp;&nbsp;   
+
+
+
+        <img width ="500px" height="500" src= "{{this.imageUrl}}" >
+    
+        
+        <div class = "content">
+    
+            <li>
+            <p> Blush: {{this.blushName}}</p> 
+            <p> Shade: {{this.blushColor}}</p>
+             <p> Price: {{this.blushPrice}} <p> 
+
+</li>
+
+</div>
+
+
+            </div>
+ 
+   
+  

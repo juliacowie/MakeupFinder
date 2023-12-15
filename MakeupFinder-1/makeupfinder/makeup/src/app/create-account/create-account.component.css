@@ -1,0 +1,105 @@
+#wrapper {
+    width: 60%;     /* specify a width! */
+    margin: 0 auto; /* center */
+    place-items: center;
+    justify-content: center;
+    background-attachment: pink;
+    text-align: center;
+   
+  }
+   
+
+input{
+    background-color:white;
+    place-items: center;
+    text-align:center;
+}
+
+
+
+h1{
+    margin: auto;
+    border: 2px solid deeppink;
+    text-align: center;
+    -webkit-text-fill-color: black;
+    text-emphasis-style:initial
+}
+
+
+
+.skinColor:active{
+    border-color: black;
+}
+
+.undertone:active{
+    border-color: black;
+}
+
+.skinConcern:active {
+    border-color: black;
+}
+
+.skinColor{
+    border-color: deeppink;
+    border-radius: 3px;
+    text-emphasis: bold;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.undertone{
+    border-color: deeppink;
+    border-radius: 3px;
+    text-emphasis: bold;
+    font-size: 15px;
+    font-weight:bold;
+}
+
+.skinConcern {
+    border-color: deeppink;
+    border-radius: 3px;
+    text-emphasis: bold;
+    font-size: 15px;
+    font-weight:bold;
+}
+
+.eyeColor {
+    border-color: deeppink;
+    border-radius: 3px;
+    text-emphasis: bold;
+    font-size: 15px;
+    font-weight:bold;
+}
+
+.eyeColor:active{
+    border-color: black;
+}
+
+
+.eyeLash {
+    border-color: deeppink;
+    border-radius: 3px;
+    text-emphasis: bold;
+    font-size: 15px;
+    font-weight:bold;
+}
+
+.eyeLash:active{
+    border-color: black;
+}
+
+
+.submit{
+    background-color: black;
+    border-color: 5px black;
+    color: pink;
+    padding: 15px 32 px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 7px;
+}
+
+body{
+    min-height: 100vh;
+}
+

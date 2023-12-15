@@ -1,0 +1,71 @@
+<body style=" background-color: pink" >
+<h1 style="font-family: fantasy"> Create Account </h1>
+<div id="wrapper">
+<p style="font-family:Times New Roman">
+    Username:
+<input class="input" style="text-align:center" type="text" #box (keyup)="getUsername(box.value)" placeholder="Enter username" name="Username">
+
+</p>
+<p style="font-family:Times New Roman">
+    Passsword:
+<input class="input" type="text" #box (keyup)="getPassword(box.value)" placeholder="Enter password" name="Username">
+</p>
+
+
+<p style="font-family: Times New Roman;"> What is your skin color?
+&nbsp;&nbsp;&nbsp;&nbsp;   
+<button class= "skinColor" style= "background-color: navajowhite" (click)= "skinColor('Fair')">Fair</button>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<button class= "skinColor" style= "background-color: peru"(click)= "skinColor('Medium')">Medium</button>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<button class= "skinColor" style= "background-color: sienna" (click)= "skinColor('Dark')">Dark</button>
+&nbsp;&nbsp;&nbsp;&nbsp; 
+{{this.skin}} </p>
+
+
+    <p style="font-family: 'Times New Roman';"> What is your undertone?
+        &nbsp;&nbsp;&nbsp;&nbsp;   
+        <button class= "undertone" style= "background-color: lightskyblue" (click)= "undertone('Cool')">Cool</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button class= "undertone" style= "background-color: gold"(click)= "undertone('Warm')">Warm</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button class= "undertone" style= "background-color: navajowhite" (click)= "undertone('Neutral')">Neutral</button>
+        &nbsp;&nbsp;&nbsp;&nbsp; 
+        {{this.under}} </p>
+        
+    
+
+        <p style="font-family: Times new Roman;"> What is your eye color?
+            &nbsp;&nbsp;&nbsp;&nbsp;   
+            <button class= "eyeColor" style= "background-color: lightSkyBlue" (click)= "eyeColor('Blue')">Blue</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button class= "eyeColor" style= "background-color: saddlebrown"(click)= "eyeColor('Brown')">Brown</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button class= "eyeColor" style= "background-color: green" (click)= "eyeColor('Green')">Green</button>
+            &nbsp;&nbsp;&nbsp;&nbsp; 
+            <button class= "eyeColor" style= "background-color: darkkhaki" (click)= "eyeColor('Hazel')">Hazel</button>
+            &nbsp;&nbsp;&nbsp;&nbsp; 
+
+            {{this.eye}} </p>
+
+            <p style="font-family: Times new Roman;"> What are your lash concerns?
+                &nbsp;&nbsp;&nbsp;&nbsp;   
+                <button class= "eyeLash" style= "background-color: deeppink" (click)= "eyeLash('Short lashes')">Short lashes</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <button class= "eyeLash" style= "background-color: deeppink"(click)= "eyeLash('Straight lashes')">Straight lashes</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <button class= "eyeLash" style= "background-color: deeppink" (click)= "eyeLash('Sparse lashes')">Sparse Lashes</button>
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+                {{this.lash}} </p>
+
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+
+
+
+                <button class="submit" *ngIf="this.ifSubmit()" (click)="createAccount()" [routerLink]="['/submit']"> Submit!</button>
+ 
+
+        
+    </div>
+    
+    </body>

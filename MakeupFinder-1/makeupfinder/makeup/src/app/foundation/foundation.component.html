@@ -1,0 +1,60 @@
+<router-outlet></router-outlet>
+<router-outlet></router-outlet>
+ <body style="background-color:pink;">
+<div id="wrapper">  
+<header>
+
+<p *ngIf="!this.hasAccount()"  style="font-family: Times New Roman;"> What is your skin color?
+&nbsp;&nbsp;&nbsp;&nbsp;   
+<button class= "skinColor" style= "background-color: navajowhite" (click)= "skinColor('Fair')">Fair</button>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<button class= "skinColor" style= "background-color: peru"(click)= "skinColor('Medium')">Medium</button>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<button class= "skinColor" style= "background-color: sienna" (click)= "skinColor('Dark')">Dark</button>
+&nbsp;&nbsp;&nbsp;&nbsp; 
+{{this.skin}} </p>
+
+
+    <p  *ngIf="!this.hasAccount()" style="font-family: 'Times New Roman';"> What is your undertone?
+        &nbsp;&nbsp;&nbsp;&nbsp;   
+        <button class= "undertone" style= "background-color: lightskyblue" (click)= "undertone('Cool')">Cool</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button class= "undertone" style= "background-color: gold"(click)= "undertone('Warm')">Warm</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button class= "undertone" style= "background-color: navajowhite" (click)= "undertone('Neutral')">Neutral</button>
+        &nbsp;&nbsp;&nbsp;&nbsp; 
+        {{this.under}} </p>
+        
+    
+
+
+<button class="getFoundation"  (click) = "getFoundation()" > Get Your Perfect Foundation!</button>
+ 
+
+
+<div>
+    &nbsp;&nbsp;&nbsp;&nbsp;   
+    &nbsp;&nbsp;&nbsp;&nbsp;   
+
+
+
+        <img width ="500px" height="500" src= "{{this.imageUrl}}" >
+    
+        
+        <div class = "content">
+    
+            <li>
+            <p> Foundation: {{this.foundationName}}</p> 
+            <p> Shade: {{this.foundationColor}}</p>
+             <p> Price: {{this.foundationPrice}} <p> 
+
+</li>
+
+</div>
+
+
+           
+    
+
+     
+        </div>

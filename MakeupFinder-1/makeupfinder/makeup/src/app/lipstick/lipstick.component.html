@@ -1,0 +1,51 @@
+<router-outlet></router-outlet>
+<router-outlet></router-outlet>
+ <body style="background-color:pink;">
+<div id="wrapper">  
+<header>
+
+
+
+    <p  *ngIf="!this.hasAccount()" style="font-family: 'Times New Roman';"> What is your undertone?
+        &nbsp;&nbsp;&nbsp;&nbsp;   
+        <button class= "undertone" style= "background-color: lightskyblue" (click)= "undertone('Cool')">Cool</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button class= "undertone" style= "background-color: gold"(click)= "undertone('Warm')">Warm</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button class= "undertone" style= "background-color: navajowhite" (click)= "undertone('Neutral')">Neutral</button>
+        &nbsp;&nbsp;&nbsp;&nbsp; 
+        {{this.under}} </p>
+        
+    
+
+
+<button class="getLipstick"  (click) = "getLipstick()" > Get Your Perfect Lipstick!</button>
+ 
+
+
+<div>
+    &nbsp;&nbsp;&nbsp;&nbsp;   
+    &nbsp;&nbsp;&nbsp;&nbsp;   
+
+
+
+        <img width ="500px" height="500" src= "{{this.imageUrl}}" >
+    
+        
+        <div class = "content">
+    
+            <li>
+            <p> Lipstick: {{this.lipstickName}}</p> 
+            <p> Shade: {{this.lipstickColor}}</p>
+             <p> Price: {{this.lipstickPrice}} <p> 
+
+</li>
+
+</div>
+
+
+           
+    
+
+     
+        </div>

@@ -1,0 +1,28 @@
+ <router-outlet></router-outlet>
+ <body style="background-color:deeppink;">
+  
+<header>
+    <h1> What kind of product are you looking for?</h1>
+
+</header>
+<ul>
+
+    <li *ngFor = "let makeup of makeup">
+    <a>
+
+        <button (click)= "click(makeup)">
+        <img width="270px" height="280px" src= "{{makeup.imageUrl}}" >
+    
+        
+        <div class = "content">
+            <div class = "name">
+            
+                {{makeup.name}}
+            </div>
+        </div>
+    </button>
+  
+        </a>
+    </li>
+</ul>
+</body>
